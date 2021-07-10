@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f5f5f5 !important; 
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+}
+
+.btn-ligar{
+    background-color: lightgreen;
+}
+
+.btn-desligar{
+    background-color: lightcoral;
+}
+
+button{
+    min-width: 100px;
+    margin-bottom: 5px;
+    padding: 4px 0;
+    width: -webkit-fill-available;
+}
+
+.container--exercicios p{
+    color: red;
+}
+
+.lampada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;    
+}
+
+.lampada img{
+    width: 15rem;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#disclamer{
+    font-size: 12px;
+    color: red;
+}

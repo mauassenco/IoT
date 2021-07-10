@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">   
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div class="container">        
+        <div class="lampada">
+            <h3><strong>Intensidade:</strong> <span id="intensidade-display"></span></h3>
+            <img id="luz1" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" alt="lampada apagada"> 
+            <button class =" btn-ligar" type= “button” name="liga">Ligar</button>
+            <button class =" btn-desligar" type= “button” name="desliga" >Desligar</button>            
+            <button class =" btn-blink" type= “button” name="piscar" >Piscar</button>
+            <p id="disclamer"></p>      
+        </div>
+        <div class="grafico">
+            <iframe id="thingspeak-graph" width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1438402/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=10"></iframe>
+        </div>
+    </div>
+
+    <script src = "../Lista1/lista1.js"></script>
+    <script src = "dash.js"></script>
+</body>
+</html>
