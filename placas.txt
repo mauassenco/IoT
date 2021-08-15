@@ -1,0 +1,4 @@
+Placas
+esp8266
+cp2102
+ch340

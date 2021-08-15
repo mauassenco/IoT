@@ -3,7 +3,7 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
   
-// Envia dados par a API via AJAX
+// Envia dados para a API via AJAX
 function sendToServer(state) {
   var KEY = 'NHULAJSJFXR8MTJT';
   //criar um objeto capaz de enviar dados via requisição HTTP GET
@@ -38,7 +38,7 @@ botoesPiscar.forEach((botaoP) => {
   botaoP.addEventListener('click', (e)=> {
       var intervalo = 0;
       var piscadas = 10; 
-      aviso.innerText = `${piscadas} piscadas como intercalor de 10s cada uma`    
+      aviso.innerText = `${piscadas} piscadas com o intervalo de 10s cada uma`    
           while(piscadas > 0){          
               setTimeout(function(){               
                   ligaLampada(e);
@@ -56,10 +56,6 @@ botoesPiscar.forEach((botaoP) => {
           }  
   }) 
 })
-
-
-
-
 
 const botaoLigar = document.querySelector("body > div > div > button.btn-ligar");
 botaoLigar.addEventListener('click', ()=> {
